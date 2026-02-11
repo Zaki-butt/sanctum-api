@@ -5,6 +5,11 @@ use App\Http\Controllers\API\V1\Auth\AuthController;
 use App\Http\Controllers\API\V1\User\UserController;
 
 
+Route::get('/v1/test2', function() {
+    return response()->json(['ok' => 'v1 works']);
+});
+
+
 Route::prefix('v1')->group(function () {
 
     // Auth (Public)
